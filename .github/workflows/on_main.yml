@@ -21,6 +21,10 @@ jobs:
      - uses: actions/setup-node@v3
        with:
         node-version: 14
+     - uses: Setup git configuration 
+       run: | 
+         git config --global user.email "my-bot@bot.com"
+         git config --global user.name "my-bot"
      - name: Install NPM packages
        run: npm ci
      - name: Install gp-page
