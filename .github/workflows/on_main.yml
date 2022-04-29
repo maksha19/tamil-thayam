@@ -23,5 +23,7 @@ jobs:
        run: npm i gh-pages --save-dev
      - name: Build package
        run: npm run build
+       env:
+        CI: false
      - name: Publish package
        run: npx npm run gh-pages -d build
