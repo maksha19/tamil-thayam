@@ -36,7 +36,7 @@ jobs:
      - run: ls 
      - name: Init new repo in dist folder and commit generated files
        run: |
-        cd ./dist
+        cd build
         git init
         git add -A
         git config --local user.email "action@github.com"
@@ -48,6 +48,6 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
         force: true
-        directory: /dist
+        directory: build
     #  - name: Publish package
     #    run: npx gh-pages -d build
