@@ -13,6 +13,7 @@ jobs:
        with: 
         repository: maksha19/thayam
         token: ${{ secrets.GET_THAYAM }}
+     - run: cd src && ls
      - uses: actions/setup-node@v3
        with:
         node-version: 14
