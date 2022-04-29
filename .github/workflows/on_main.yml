@@ -11,5 +11,5 @@ jobs:
     steps:
      - uses: actions/checkout@v3
        with: 
-        repository: maksha19/tamil-thayam
+        repository: maksha19/thayam
      - run: ls
