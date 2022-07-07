@@ -26,7 +26,6 @@ jobs:
        run: |
         cd build
         echo > .nojekyll
-        echo 'TAMILGAMES4ALL.COM' > CNAME
         git init
         git add -A
         git config --local user.email "action@github.com"
