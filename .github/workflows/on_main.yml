@@ -11,7 +11,7 @@ jobs:
     steps:
      - uses: actions/checkout@v3
        with: 
-        repository: maksha19/thayam
+        repository: maksha19/thayam2.0
         token: ${{ secrets.GET_THAYAM }}
      - uses: actions/setup-node@v3
        with:
